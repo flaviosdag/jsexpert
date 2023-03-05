@@ -13,6 +13,7 @@ export default class Controller {
         this.#worker = this.#configureWorker(worker)
 
         this.#view.configureOnBtnClick(this.onBtnStart.bind(this))
+        
     }
     static async initialize(deps) {
         const controller = new Controller(deps)
